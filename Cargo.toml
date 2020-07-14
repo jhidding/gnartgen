@@ -1,0 +1,33 @@
+# ~\~ language=TOML filename=Cargo.toml
+# ~\~ begin <<lit/index.md|Cargo.toml>>[0]
+[package]
+name = "gnartgen"
+version = "0.1.0"
+authors = ["Johan Hidding <j.hidding@esciencecenter.nl>"]
+edition = "2018"
+
+[dependencies]
+# ~\~ begin <<lit/index.md|cargo-dependencies>>[0]
+log = "0.4"
+pretty_env_logger = "0.4"
+glib = "0.10"
+# ~\~ end
+# ~\~ begin <<lit/index.md|cargo-dependencies>>[1]
+rusqlite = { version="0.23", features=["backup"] }
+# ~\~ end
+
+# ~\~ begin <<lit/index.md|cargo>>[0]
+[dependencies.gtk]
+version = "0.9.0"
+features = ["v3_16"]
+
+[dependencies.gio]
+version = ""
+features = ["v2_44"]
+# ~\~ end
+# ~\~ begin <<lit/index.md|cargo>>[1]
+[dependencies.sourceview]
+version = "0.9"
+features = ["v3_24"]
+# ~\~ end
+# ~\~ end

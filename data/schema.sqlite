@@ -1,0 +1,11 @@
+-- ~\~ language=SQLite filename=data/schema.sqlite
+-- ~\~ begin <<lit/index.md|data/schema.sqlite>>[0]
+create table if not exists "objects"
+    ( "id"          integer primary key autoincrement not null
+    , "name"        text
+    , "description" text
+    , "source"      text
+    , "thumbnail"   blob
+    );
+-- vim:ft=mysql
+-- ~\~ end
