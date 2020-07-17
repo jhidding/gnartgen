@@ -11,6 +11,7 @@ edition = "2018"
 log = "0.4"
 pretty_env_logger = "0.4"
 glib = "0.10"
+pango = "0.9"
 # ~\~ end
 # ~\~ begin <<lit/index.md|cargo-dependencies>>[1]
 rusqlite = { version="0.23", features=["backup"] }

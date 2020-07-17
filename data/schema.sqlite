@@ -2,7 +2,7 @@
 -- ~\~ begin <<lit/index.md|data/schema.sqlite>>[0]
 create table if not exists "objects"
     ( "id"          integer primary key autoincrement not null
-    , "name"        text
+    , "name"        text unique
     , "description" text
     , "source"      text
     , "thumbnail"   blob

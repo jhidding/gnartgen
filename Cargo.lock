@@ -373,6 +373,7 @@ dependencies = [
  "glib",
  "gtk",
  "log",
+ "pango",
  "pretty_env_logger",
  "rusqlite",
  "sourceview",
